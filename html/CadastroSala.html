@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Cadastro de Salas</title>
+  </head>
+  <body onload="mostrar()">
+    <!--onload="mostrar()" carrega a função mostar assim que inicia o programa-->
+
+    <h1>Cadastro de Salas</h1>
+
+    <div id="corpo_nome">
+      <!--AQUI ESTÁ O PADRÃO DE CADA INPUT-->
+      <label for="nome"><strong>Cadastro de Sala</strong></label>
+      <input
+        type="text"
+        name="cadastro_de_cursos"
+        id="cadastro_de_cursos"
+        placeholder="cad.Sala"
+      />
+      <button id="botao" >Enviar</button>
+      <!--FIM aqui está o padrão de cada input-->
+    </div>
+    <label for="exclusao_de_cursos"><strong>Exclusão de Sala</strong></label>
+      <input
+        type="text"
+        name="exclusao_de_cursos"
+        id="exclusao_de_cursos"
+        placeholder="exc.Sala"
+      />
+
+    <button id="exclui">Excluir</button>
+
+<label for="update_de_cursos"><strong>Atualização de Sala</strong></label>
+
+<input
+        type="number"
+        name="id_update"
+        id="id_update"
+        placeholder="ex: 1"
+      />
+    
+      <input
+        type="text"
+        name="update_de_cursos"
+        id="update_de_cursos"
+        placeholder="upd.Sala"
+      />
+    <button id="alterei">Alterar</button>
+    <div class="navbar">
+      
+      
+     <!-- <button id="btnedicao">edicao</button>-->
+    </div>
+
+    <br />
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Salas Salvas</th>
+        </tr>
+      </thead>
+      <tbody id="corpo">
+        <!--AQUI VAI FICAR A CADA UM DOS DADOS RECEBIDOS DOS INPUT'S-->
+      </tbody>
+    </table>
+    <!--<script src="js/script1.js"></script>-->
+    <script src="/js/salas.js"></script>
+  </body>
+</html>
